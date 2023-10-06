@@ -1,0 +1,1 @@
+A news app made with remix and sanity to study purposes
