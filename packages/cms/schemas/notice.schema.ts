@@ -37,6 +37,14 @@ export const noticeSchema = defineType({
       name: 'previewImage',
       type: 'image',
       group: 'preview',
+      fields: [
+        defineField({
+          type: 'string',
+          name: 'alt',
+          title: 'Alternative Text',
+          validation: (rule) => rule.required().error('The Alternative Text is a required field'),
+        }),
+      ],
     }),
 
     defineField({

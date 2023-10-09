@@ -25,7 +25,7 @@ export default function Slug() {
     <main className="p-8 space-y-2">
       <h1 className="text-xl font-bold">{title}</h1>
       <h2>{subtitle}</h2>
-      <div className="border-2 border-red-50 p-4">
+      <div className="p-4">
         <PortableText value={content} />
       </div>
     </main>

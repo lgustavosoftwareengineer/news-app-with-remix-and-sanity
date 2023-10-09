@@ -1,4 +1,5 @@
 import { type LinksFunction } from "@remix-run/node";
+import {SiMicrodotblog} from 'react-icons/si'
 import {
   Links,
   LiveReload,
@@ -23,7 +24,11 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="h-screen w-screen">
+        <header className="border-b-gray-100 bg-blue-400 border-b-2 p-8 font-bold text-gray-100 text-2xl flex space-x-2 items-center">
+          <SiMicrodotblog/>
+          <h1>Gustavo News</h1>
+        </header>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
